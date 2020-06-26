@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  server:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      - RUNTIME_VARS=VERB,OBJECT
+      - VERB=Consider
+      - OBJECT=the Future
